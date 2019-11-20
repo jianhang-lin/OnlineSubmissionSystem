@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+	<mapping resource="work/jianhang/service/model/User.hbm.xml"/>
+	<mapping resource="work/jianhang/service/model/Category.hbm.xml"/>
+	<mapping resource="work/jianhang/service/model/Article.hbm.xml"/>
+	<mapping resource="work/jianhang/service/model/Mail.hbm.xml"/>
+	<mapping resource="work/jianhang/service/model/Replay.hbm.xml"/>
+
+</session-factory>
+</hibernate-configuration>

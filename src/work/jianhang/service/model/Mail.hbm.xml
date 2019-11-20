@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="work.jianhang.service.model.Mail" table="mail" >
+        <id name="id" type="integer">
+            <column name="id" />
+            <generator class="native"/>
+        </id>
+        <property name="title" type="string">
+            <column name="title" length="30" />
+        </property>
+        <property name="content" type="text">
+            <column name="content" />
+        </property>
+        <property name="date" type="string">
+            <column name="cdate" length="25" />
+        </property>
+        <property name="isNew" type="int">
+            <column name="isNew" length="1" />
+        </property>
+        
+        <many-to-one name="receiver" column="reveiver_id" lazy="false"/>
+        <many-to-one name="sender" column="sender_id" lazy="false"/>
+     	<many-to-one name="beto" column="beto" lazy="false"/>
+    </class>
+</hibernate-mapping>

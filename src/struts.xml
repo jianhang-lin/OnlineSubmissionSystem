@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<!-- 404页面 -->
+	<package name="default" extends="struts-default" namespace="/">
+		<default-action-ref name="error"></default-action-ref>  
+		<action name="error">  
+			<result>/error/404.htm</result>  
+		</action> 
+	</package>
+
+</struts>
+	
